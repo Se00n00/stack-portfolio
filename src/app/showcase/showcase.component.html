@@ -1,0 +1,60 @@
+@if (projects_list()){
+    <div class="object-contain flex flex-col items-center justify-center p-10">
+        <img class="h-64 md:h-80 mt-10 md:mt-2" src="illustrations/no_projects.png" alt="">
+        <p class="text-4xl md:text-5xl font-semibold text-white/[0.8]">Working On it!</p>
+    </div>
+}@else {
+
+    <div class="relative h-full">
+        <a href="#" class="h-full p-10 flex flex-col md:flex-row gap-5 hover:bg-gray-600 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-900">
+            <div class="bg-white flex items-center rounded-xl md:flex-1 lg:flex-1">
+                <img class="h-[250px] md:h-[350px] lg:h-[400px] object-contain" src="illustrations/no_projects.png" alt="">
+            </div>
+            <div class="flex-1 flex flex-col gap-3">
+                <p class="text-4xl text-white">Project Name in Upper Case or any case</p>
+                <div class="flex flex-wrap gap-2">
+                    @for (item of list; track $index) {
+                        <div class="text-white/[0.5] bg-white/[0.1] border border-white/[0.1] p-1 px-2 rounded-full flex">{{item}}</div>
+                    }
+                </div>
+    
+                <p class="text-white/[0.9] mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis fugit dolorem, voluptates vitae quaerat non hic dolorum ipsam esse ea.</p>
+            </div>
+            
+        </a>
+
+
+
+
+        <!-- CROUSAL STARTS HERE -->
+        <div class="absolute rounded-3xl h-12 bottom-0 right-[-20px] w-3/12 lg:w-2/12 bg-slate-600">
+            <div class="absolute h-10 w-10 bg-transparent right-5 bottom-12 rotate-180 rounded-tl-3xl shadow-slate-600" style="box-shadow: -10px -10px #475569;"></div>
+            <div class="absolute rounded-3xl h-24 w-10 bg-slate-600 rotate-45 -left-5 -bottom-[40px]">
+              <div class="absolute w-10 h-10 rotate-180 bg-transparent rounded-3xl right-10 bottom-1" style="box-shadow: -30px -15px #475569 ;"></div>
+            </div>
+    
+    
+    
+            <!-- CROUSAL BUTTONS STARTS HERE -->
+            <div class="absolute bottom-0 right-4 md:right-16  flex gap-2 justify-between items-center">
+             <div class="w-10 h-10 flex justify-center items-center fill-white hover:fill-white/[0.8] hover:opacity-80 cursor-pointer z-50">
+                <svg class="rotate-180" width="40px" height="40px" viewBox="0 0 24 24" fill="inherit" xmlns="http://www.w3.org/2000/svg">
+                    <!-- <path d="M21 3.75C21 3.33579 20.6642 3 20.25 3C19.8358 3 19.5 3.33579 19.5 3.75V20.25C19.5 20.6642 19.8358 21 20.25 21C20.6642 21 21 20.6642 21 20.25V3.75Z" fill="#212121"/> -->
+                    <path d="M5.7697 3.52521C4.61175 2.69498 3 3.5226 3 4.94743V19.1704C3 20.5542 4.53019 21.3905 5.69492 20.6434L16.1646 13.927C17.2053 13.2593 17.2443 11.7523 16.2394 11.0318L5.7697 3.52521ZM4.5 4.94743C4.5 4.74388 4.73025 4.62565 4.89567 4.74425L15.3653 12.2508C15.5089 12.3537 15.5033 12.569 15.3547 12.6644L4.88499 19.3808C4.7186 19.4876 4.5 19.3681 4.5 19.1704V4.94743Z" fill="inherit"/>
+                </svg>
+              </div>
+              <div class="w-10 h-10 flex justify-center items-center fill-white hover:fill-white/[0.8] hover:opacity-80 cursor-pointer z-50">
+                <svg width="40px" height="40px" viewBox="0 0 24 24" fill="inherit" xmlns="http://www.w3.org/2000/svg">
+                    <!-- <path d="M21 3.75C21 3.33579 20.6642 3 20.25 3C19.8358 3 19.5 3.33579 19.5 3.75V20.25C19.5 20.6642 19.8358 21 20.25 21C20.6642 21 21 20.6642 21 20.25V3.75Z" fill="#212121"/> -->
+                    <path d="M5.7697 3.52521C4.61175 2.69498 3 3.5226 3 4.94743V19.1704C3 20.5542 4.53019 21.3905 5.69492 20.6434L16.1646 13.927C17.2053 13.2593 17.2443 11.7523 16.2394 11.0318L5.7697 3.52521ZM4.5 4.94743C4.5 4.74388 4.73025 4.62565 4.89567 4.74425L15.3653 12.2508C15.5089 12.3537 15.5033 12.569 15.3547 12.6644L4.88499 19.3808C4.7186 19.4876 4.5 19.3681 4.5 19.1704V4.94743Z" fill="inherit"/>
+                </svg>
+              </div>
+            </div>
+            <!-- CROUSAL BUTTONS ENDS HERE -->
+            
+        </div>
+        <!-- CROUSAL STARTS HERE -->
+    </div>
+    
+    
+}
