@@ -10,7 +10,7 @@ export const routes: Routes = [
     {path:"",title:"portfolio", redirectTo:"/home", pathMatch:'full'},
     {path:"home",title:"portfolio-home",component:HomeComponent},
     {path:"about",title:"me",component:AboutComponent},
-    {path:"projects",title:"my projects",component:ProjectsComponent},
+    // {path:"projects",title:"my projects",component:ProjectsComponent},
     {path:"blogs",title:"my blogs",component:BlogComponent},
     // {path:"home",title:"portfolio-home",component:HomeComponent, children:[
         

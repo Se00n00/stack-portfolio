@@ -1,6 +1,6 @@
 <main class="flex flex-wrap">
 
-  <div class="relative h-screen lg:min-h-screen w-screen md:w-full lg:w-5/12 box-border p-2 md:p-10 overflow-hidden">
+  <div class="relative min-h-max lg:min-h-screen w-screen md:w-full lg:w-5/12 box-border p-2 md:p-10 overflow-hidden">
     <div class="relative h-full rounded-3xl" style="background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);">
       <div class="absolute flex justify-center items-center box-border rounded-3xl h-12 left-[-20px] w-6/12 bg-slate-600">
         <div class="absolute h-10 w-10 bg-transparent left-5 top-12 rounded-tl-3xl shadow-slate-600" style="box-shadow: -10px -10px #475569;"></div>
@@ -13,17 +13,17 @@
       <div class="w-full h-full flex flex-col justify-center items-center">
 
         <!-- ABOUT + HOME -->
-        <div [routerLink]="['/home']" class="flex z-50 justify-start items-center gap-1 md:gap-3 w-full text-xl md:text-4xl relative left-2 sm:left-10 top-3 sm:top-0 select-none stroke-white hover:stroke-white/[0.8] text-white hover:text-white/[0.8] cursor-pointer">
+        <div [routerLink]="['/home']" class="flex z-50 justify-start items-center gap-1 md:gap-3 w-full text-xl md:text-4xl lg:text-xl xl:text-3xl relative left-2 sm:left-10 top-3 sm:top-0 select-none stroke-white hover:stroke-white/[0.8] text-white hover:text-white/[0.8] cursor-pointer">
           <div class="">PORTFOLIO</div>
-          <svg class="stroke-inherit w-6 h-5 md:w-10 md:h-12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- <svg class="stroke-inherit w-6 h-5 md:w-10 md:h-12 lg:hidden" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M17 13C17 12.4696 17.2107 11.9609 17.5858 11.5858C17.9609 11.2107 18.4696 11 19 11C19.5304 11 20.0392 11.2107 20.4142 11.5858C20.7893 11.9609 21 12.4696 21 13V18.9999C21 19.5303 20.7893 20.0391 20.4142 20.4142C20.0392 20.7893 19.5304 20.9999 19 20.9999C18.4696 20.9999 17.9609 20.7893 17.5858 20.4142C17.2107 20.0391 17 19.5303 17 18.9999V13Z" stroke="inherit" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M3 13C3 12.4696 3.21074 11.9609 3.58582 11.5858C3.96089 11.2107 4.46957 11 5 11C5.53043 11 6.03917 11.2107 6.41425 11.5858C6.78932 11.9609 7 12.4696 7 13V18.9999C7 19.5303 6.78932 20.0391 6.41425 20.4142C6.03917 20.7893 5.53043 20.9999 5 20.9999C4.46957 20.9999 3.96089 20.7893 3.58582 20.4142C3.21074 20.0391 3 19.5303 3 18.9999V13Z" stroke="inherit" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M19 11V10C19 8.14348 18.2625 6.36305 16.9498 5.05029C15.637 3.73754 13.8565 3 12 3C10.1435 3 8.36305 3.73754 7.05029 5.05029C5.73754 6.36305 5 8.14348 5 10V11" stroke="inherit" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
+          </svg> -->
          </div>
 
         <!-- CONTENT STARTS HERE -->
-        <div class="flex-1 h-full w-full box-border p-12 z-50">
+        <div class="flex-1 h-full w-full box-border p-5 md:p-10 z-50">
           <router-outlet/>
         </div>
         <!-- CONTENT STARTS HERE -->
@@ -40,7 +40,7 @@
           <div class="absolute bottom-0 right-4 md:right-16 flex gap-2 justify-between items-center">
             
             <div class="hover:opacity-80 cursor-pointer z-50">
-              <a href="#">
+              <a href="https://www.linkedin.com/in/mohit-kumar-055126248/">
                 <svg width="25px" height="25px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       
                   <title>linkedin [#161]</title>
@@ -58,13 +58,15 @@
             </div>
             
             <div class="w-10 h-10 flex justify-center items-center hover:opacity-80 cursor-pointer z-50">
-              <svg  xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-twitter-x" viewBox="0 0 16 16">
-                <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
-              </svg>
+              <a href="https://x.com/Se00n001">
+                <svg  xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                </svg>
+              </a>
             </div>
 
             <div class="w-10 h-10 p-[6px] hover:opacity-80 cursor-pointer z-50">
-              <a href="" ><img class="h-10 w-10" src="github-mark-white.png" class="hover:opacity-60 transition-opacity" ></a>
+              <a href="https://github.com/Se00n00"><img class="h-10 w-10" src="github-mark-white.png" class="hover:opacity-60 transition-opacity" ></a>
             </div>
           </div>
           <!-- SOCIAL LINKS ENDS HERE -->
@@ -86,7 +88,7 @@
           <div class="absolute z-50 flex gap-5 pt-3 -rotate-90 text-white justify-center items-end">
             <div [routerLink]="['home']" class="hover:bg-blue-600 h-8 flex items-center px-3 rounded-full transition-all cursor-pointer">Home</div>
             <div [routerLink]="['about']" class="hover:bg-blue-600 h-8 flex items-center px-3 rounded-full transition-all cursor-pointer">About</div>
-            <div [routerLink]="['projects']" class="hover:bg-blue-600 h-8 flex items-center px-3 rounded-full transition-all cursor-pointer">Projects</div>
+            <!-- <div [routerLink]="['projects']" class="hover:bg-blue-600 h-8 flex items-center px-3 rounded-full transition-all cursor-pointer">Projects</div> -->
             <div [routerLink]="['blogs']" class="hover:bg-blue-600 h-8 flex items-center px-3 rounded-full transition-all cursor-pointer">Blogs</div>
           </div>
         </div>
@@ -100,11 +102,11 @@
     
   </div>
   <div class="flex-1 min-h-screen flex flex-col p-5 md:p-10 xl:pl-0">
-    <div class="min-flex-[0.6] w-full bg-slate-900 rounded-xl overflow-hidden">
+    <div #projectElement class="min-flex-[0.6] w-full bg-slate-900 rounded-xl overflow-hidden">
       <app-showcase/>
     </div>
-    <div class="flex-1 min-flex-[0.4] w-full flex flex-wrap mt-10 gap-10 items-center">
-      <div class="flex-1 h-full">
+    <div class="flex-1 w-full flex flex-col sm:flex-row  mt-10 gap-10 items-center">
+      <div class="flex-1 h-full w-full">
         <!-- HEAT MAP -->
          <app-charts class="h-full"/>
         <!-- ROUND CHART -->
@@ -112,14 +114,14 @@
 
 
       <!-- NAVIGATOR TO OTHER LINKS STARTS HERE:: PORTFOLIO OF ML + CONTACT EMAIL -->
-      <div class="flex flex-wrap h-full">
+      <div class="flex flex-wrap h-full w-full sm:w-auto" style="transform: scaleX();">
         <!-- <div class="flex-1 bg-white rounded-xl" style="background-image: linear-gradient(to right bottom, #30cfd0 0%, #330867 100%);"></div> -->
-        <div class="w-16 flex flex-col gap-2">
-          <div class="flex items-center justify-center flex-1 border-4 border-orange-400 rounded-xl" style="background-image: linear-gradient(to bottom, #f6d365 0%, #fda085 100%);">
+        <div class="w-full flex flex-row sm:flex-col gap-2 ">
+          <div class=" flex items-center justify-center flex-1 border-4 border-orange-400 rounded-xl" style="background-image: linear-gradient(to bottom, #f6d365 0%, #fda085 100%);">
             <!-- <div class="w-40 ">CONTACT ME</div> -->
           </div>
-          <div class="h-16 bg-orange-300 border-4 border-orange-400 rounded-xl flex items-center justify-center stroke-orange-300 hover:stroke-orange-500 cursor-pointer">
-            <a href="mailto:bluesky5april2021@gmail.com">
+          <div id="contact" class=" h-12 w-12  bg-orange-300 border-4 border-orange-400 rounded-xl flex items-center justify-center stroke-orange-300 hover:stroke-orange-500 cursor-pointer">
+            <a href="mailto:bluesky5april2021@gmail.com " class="animate-browsein" >
               <svg class="stroke-orange-400/[0.6] hover:stroke-inherit" width="40px" height="40px" viewBox="-0.5 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M21.2091 5.41992C15.5991 16.0599 8.39906 16.0499 2.78906 5.41992" stroke="inherit" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M1.99023 7.39001V17.39C1.99023 18.4509 2.41166 19.4682 3.1618 20.2184C3.91195 20.9685 4.92937 21.39 5.99023 21.39H17.9902C19.0511 21.39 20.0685 20.9685 20.8186 20.2184C21.5688 19.4682 21.9902 18.4509 21.9902 17.39V7.39001C21.9902 6.32915 21.5688 5.31167 20.8186 4.56152C20.0685 3.81138 19.0511 3.39001 17.9902 3.39001H5.99023C4.92937 3.39001 3.91195 3.81138 3.1618 4.56152C2.41166 5.31167 1.99023 6.32915 1.99023 7.39001Z" stroke="inherit" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -137,9 +139,9 @@
 </main>
 
 
-<footer class="mx-5 md:mx-10 bg-white rounded-lg shadow-sm m-4 dark:bg-gray-800">
+<footer class="mx-5 md:mx-10 rounded-lg shadow-sm m-4 bg-gray-800">
   <div class="w-full px-5 p-4 flex items-center justify-between">
-    <a href="#" class="text-center stroke-gray-500 dark:stroke-gray-400 hover:opacity-70 transition-opacity">
+    <a (click)="scrollToTop()" class=" cursor-pointer text-center stroke-gray-500 dark:stroke-gray-400 hover:opacity-70 transition-opacity">
       <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M5 15L10 9.84985C10.2563 9.57616 10.566 9.35814 10.9101 9.20898C11.2541 9.05983 11.625 8.98291 12 8.98291C12.375 8.98291 12.7459 9.05983 13.0899 9.20898C13.434 9.35814 13.7437 9.57616 14 9.84985L19 15" stroke="inherit" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>

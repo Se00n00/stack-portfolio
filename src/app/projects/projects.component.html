@@ -1,39 +1,15 @@
-<div class="realative h-full mr-10 mb-10 rounded-lg overflow-scroll">
+<div class="realative h-full p-16 pl-5 pt-5 rounded-lg overflow-hidden">
     
-
-    <p class="absolute top-5 right-8 text-3xl text-white/[0.5] hover:text-white/[0.7] stroke-white/[0.5] hover:stroke-white/[0.7] font-semibold mb-5 flex gap-1">
-        <!-- <svg width="40px" height="40px" viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.5 12.9543C5.51239 14.0398 5.95555 15.076 6.73197 15.8348C7.50838 16.5936 8.55445 17.0128 9.64 17.0003H10.2L11.86 18.7323C12.0291 18.9036 12.2598 19 12.5005 19C12.7412 19 12.9719 18.9036 13.141 18.7323L14.8 17.0003H15.36C16.4456 17.0128 17.4916 16.5936 18.268 15.8348C19.0444 15.076 19.4876 14.0398 19.5 12.9543V8.04428C19.4731 5.7845 17.6198 3.97417 15.36 4.00028H9.64C7.38021 3.97417 5.5269 5.7845 5.5 8.04428V12.9543Z" stroke="inherit" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg> -->
-        <svg width="30px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.4 2h13.2A3.4 3.4 0 0 1 22 5.4v13.2a3.4 3.4 0 0 1-3.4 3.4H5.4A3.4 3.4 0 0 1 2 18.6V5.4A3.4 3.4 0 0 1 5.4 2ZM7 5a1 1 0 0 1 1 1v8a1 1 0 1 1-2 0V6a1 1 0 0 1 1-1Zm5 0a1 1 0 0 1 1 1v6a1 1 0 1 1-2 0V6a1 1 0 0 1 1-1Zm6 1a1 1 0 1 0-2 0v10a1 1 0 1 0 2 0V6Z" fill="inherit"/>
-        </svg>
     
-        <span class="hidden sm:block">Projects</span>
-    </p>
-    
-    <div class="flex flex-wrap md:grid md:grid-cols-2 gap-5">
-        @for (item of itemss; track $index) {
+    <div class="flex flex-wrap md:grid md:grid-cols-2 lg:flex lg:flex-wrap xl:grid gap-5 justify-center items-center">
+        @for (item of svgs; track $index) {
 
-            <div class="rounded-xl">
-                <div class="bg-blue-100 p-5 rounded-2xl overflow-hidden">
-                    <img class="h-full w-full" src="illustrations/web-dev.png" alt="sda">
+            <div class="rounded-xl" (click)="scrolltoproject()">
+                <div class="bg-blue-100/[0.2] p-5 h-max rounded-2xl">
+                    <img class="min-h-[230px] " [src]="item" alt="sda">
 
-                    <p class="text-xl md:text-3xl mb-2 font-semibold text-black/[0.7] px-5">Web Development</p>
-                    <div class="flex items-center text-sm gap-2 px-5">
-                        <ul class="flex items-center gap-2 text-[#00000090]">
-                            @for(item of web_developement_items;track $index;let id = $index, count = $count){
-                                <li>{{item}}</li>
-                                @if(id != count-1){
-                                    <svg width="5px" height="5px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect x="1" y="1" width="14" height="14" fill="#00000050"/>
-                                    </svg>
-                                }
-                                
-                            }
-                        </ul>
-                        
-                    </div>
+                    <!-- <p class="text-xl md:text-3xl lg:text-xl mb-2 font-semibold text-black/[0.7] px-5">Web Development</p> -->
+                    
                 </div>
             </div>
     

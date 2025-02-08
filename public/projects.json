@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "link_to_project": "link/to/project",
+        "image":"illustrations/no_projects.png",
+        "title": "Project Name in Upper case or any case",
+        "keywords": [10,23,"ngrx","heritics","sigma","alpha","asdasda"],
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis fugit dolorem, voluptates vitae quaerat non hic dolorum ipsam esse ea."
+    },
+    {
+        "id": 2,
+        "link_to_project": "link/to/project",
+        "image":"illustrations/no_projects.png",
+        "title": "Project Name in Upper case or any case asds",
+        "keywords": [10,23,"ngrx","heritics","sigma","alpha","asdasda"],
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis fugit dolorem, voluptates vitae quaerat non hic dolorum ipsam esse ea."
+    },
+    {
+        "id": 1,
+        "link_to_project": "link/to/project",
+        "image":"illustrations/no_projects.png",
+        "title": "Project Name in Upper casdsfsdf e or any case",
+        "keywords": [10,23,"ngrx","heritics","sigma","alpha","asdasda"],
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis fugit dolorem, voluptates vitae quaerat non hic dolorum ipsam esse ea."
+    },
+    {
+        "id": 2,
+        "link_to_project": "link/to/project",
+        "image":"illustrations/no_projects.png",
+        "title": "Project Name in Uppesfdsdf r case or any case asds",
+        "keywords": [10,23,"ngrx","heritics","sigma","alpha","asdasda"],
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis fugit dolorem, voluptates vitae quaerat non hic dolorum ipsam esse ea."
+    }
+]

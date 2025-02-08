@@ -12,4 +12,8 @@ import { ChartsComponent } from './charts/charts.component';
 })
 export class AppComponent {
   title = 'stack-portfolio';
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  
 }

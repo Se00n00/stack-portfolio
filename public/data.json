@@ -1,0 +1,260 @@
+{
+    "skills":[
+        {
+            "logo":"logos/header.png",
+            "data":{
+            "series": [
+                {
+                "name": "",
+                "data": [10,9,8,7,6]
+                
+                }
+            ],
+            "chart": {
+                "background": "#fff00000",
+                "height": 100,
+                "width":200,
+                "foreColor": "#00ff0000",
+                "type": "heatmap",
+                "toolbar": {
+                "show": false
+                }
+            },
+            "plotOptions": {
+                "heatmap": {
+                "radius": 20,
+                "shadeIntensity": 0.1,
+                "colorScale": {
+                    "ranges": [
+                    {
+                        "from": -30,
+                        "to": 5,
+                        "name": "low",
+                        "color": "#00A100"
+                    },
+                    {
+                        "from": 6,
+                        "to": 20,
+                        "name": "medium",
+                        "color": "#128FD9"
+                    },
+                    {
+                        "from": 21,
+                        "to": 45,
+                        "name": "high",
+                        "color": "#FFB200"
+                    },
+                    {
+                        "from": 46,
+                        "to": 55,
+                        "name": "extreme",
+                        "color": "#FF0000"
+                    }
+                    ]
+                }
+                }
+            },
+            "dataLabels": {
+                "enabled": false
+            },
+            "legend": {
+                "show": false
+            }
+            
+            },
+            "images":["tech_stack_logos/Angular.webp","tech_stack_logos/Prime.webp","tech_stack_logos/ngrx.svg","tech_stack_logos/HTML5.png","tech_stack_logos/Tailwind.png"]
+        },
+        {
+            "logo":"logos/backend.svg",
+            "data":{
+            "series": [
+                {
+                "name": "",
+                "data": [10,5,3,2,1]
+                
+                }
+            ],
+            "chart": {
+                "background": "#fff00000",
+                "height": 100,
+                "width":200,
+                "foreColor": "#00ff0000",
+                "type": "heatmap",
+                "toolbar": {
+                "show": false
+                }
+            },
+            "plotOptions": {
+                "heatmap": {
+                "radius": 20,
+                "shadeIntensity": 0.1,
+                "colorScale": {
+                    "ranges": [
+                    {
+                        "from": -30,
+                        "to": 5,
+                        "name": "low",
+                        "color": "#00A100"
+                    },
+                    {
+                        "from": 6,
+                        "to": 20,
+                        "name": "medium",
+                        "color": "#128FD9"
+                    },
+                    {
+                        "from": 21,
+                        "to": 45,
+                        "name": "high",
+                        "color": "#FFB200"
+                    },
+                    {
+                        "from": 46,
+                        "to": 55,
+                        "name": "extreme",
+                        "color": "#FF0000"
+                    }
+                    ]
+                }
+                }
+            },
+            "dataLabels": {
+                "enabled": false
+            },
+            "legend": {
+                "show": false
+            }
+            
+            },
+            "images":["tech_stack_logos/django.svg","tech_stack_logos/flask.png","tech_stack_logos/Node.webp","tech_stack_logos/spring.png"]
+        },
+        {
+            "logo":"logos/database.svg",
+            "data":{
+            "series": [
+                {
+                "name": "",
+                "data": [10,10,9,9,5]
+                
+                }
+            ],
+            "chart": {
+                "background": "#fff00000",
+                "height": 100,
+                "width":200,
+                "foreColor": "#00ff0000",
+                "type": "heatmap",
+                "toolbar": {
+                "show": false
+                }
+            },
+            "plotOptions": {
+                "heatmap": {
+                "radius": 20,
+                "shadeIntensity": 0.1,
+                "colorScale": {
+                    "ranges": [
+                    {
+                        "from": -30,
+                        "to": 5,
+                        "name": "low",
+                        "color": "#00A100"
+                    },
+                    {
+                        "from": 6,
+                        "to": 20,
+                        "name": "medium",
+                        "color": "#128FD9"
+                    },
+                    {
+                        "from": 21,
+                        "to": 45,
+                        "name": "high",
+                        "color": "#FFB200"
+                    },
+                    {
+                        "from": 46,
+                        "to": 55,
+                        "name": "extreme",
+                        "color": "#FF0000"
+                    }
+                    ]
+                }
+                }
+            },
+            "dataLabels": {
+                "enabled": false
+            },
+            "legend": {
+                "show": false
+            }
+            
+            },
+            "images":["tech_stack_logos/tensorflow.png","tech_stack_logos/torch.webp"]
+        },
+        {
+            "logo":"logos/ml.svg",
+            "data":{
+            "series": [
+                {
+                "name": "",
+                "data": [10,7,6,5,1]
+                
+                }
+            ],
+            "chart": {
+                "background": "#fff00000",
+                "height": 100,
+                "width":200,
+                "foreColor": "#00ff0000",
+                "type": "heatmap",
+                "toolbar": {
+                "show": false
+                }
+            },
+            "plotOptions": {
+                "heatmap": {
+                "radius": 20,
+                "shadeIntensity": 0.1,
+                "colorScale": {
+                    "ranges": [
+                    {
+                        "from": -30,
+                        "to": 5,
+                        "name": "low",
+                        "color": "#00A100"
+                    },
+                    {
+                        "from": 6,
+                        "to": 20,
+                        "name": "medium",
+                        "color": "#128FD9"
+                    },
+                    {
+                        "from": 21,
+                        "to": 45,
+                        "name": "high",
+                        "color": "#FFB200"
+                    },
+                    {
+                        "from": 46,
+                        "to": 55,
+                        "name": "extreme",
+                        "color": "#FF0000"
+                    }
+                    ]
+                }
+                }
+            },
+            "dataLabels": {
+                "enabled": false
+            },
+            "legend": {
+                "show": false
+            }
+            
+            },
+            "images":["tech_stack_logos/sql.webp","tech_stack_logos/Mongodb.png"]
+        }
+    ]
+}
