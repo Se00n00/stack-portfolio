@@ -24,16 +24,45 @@
                 
             </a>
         <!-- } -->
+
+
         
-
-
-
 
         <!-- CROUSAL STARTS HERE -->
         <div class="absolute rounded-3xl h-12 bottom-0 right-[-20px] w-4/12 sm:w-3/12 lg:w-3/12 bg-slate-600">
             <div class="absolute h-10 w-10 bg-transparent right-5 bottom-12 rotate-180 rounded-tl-3xl shadow-slate-600" style="box-shadow: -10px -10px #475569;"></div>
             <div class="absolute rounded-3xl h-24 w-10 bg-slate-600 rotate-45 -left-5 -bottom-[40px]">
               <div class="absolute w-10 h-10 rotate-180 bg-transparent rounded-3xl right-10 bottom-1" style="box-shadow: -30px -15px #475569 ;"></div>
+            </div>
+
+            <div class="absolute w-12 right-5 flex justify-center items-center ">
+                <div class="relative bg-slate-600 w-full h-96 rounded-l-3xl">
+                  <div class="absolute -top-7 -left-[10px] h-10 w-28 bg-slate-600 rounded-3xl -rotate-45">
+                    <div class="absolute h-10 w-10 bg-transparent right-[20px] -top-10 rotate-45 rounded-3xl" style="box-shadow: 31px 10px #475569;"></div>
+                  </div>
+                  <div class="absolute -bottom-7 -left-[10px] h-10 w-28 bg-slate-600 rounded-3xl rotate-45">
+                    <div class="absolute h-10 w-10 bg-transparent right-[20px] -bottom-10 -rotate-90 rounded-3xl" style="box-shadow: 31px 15px #475569;"></div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="absolute w-10 -top-60 h-20 right-5 flex justify-center items-center ">
+                <div class="relative bg-slate-600 w-full h-60 rounded-l-3xl">
+                  <div class="absolute -top-7 -left-[10px] h-10 w-28 bg-slate-600 rounded-3xl -rotate-45">
+                    <div class="absolute h-10 w-10 bg-transparent right-[20px] -top-10 rotate-45 rounded-3xl" style="box-shadow: 31px 10px #475569;"></div>
+                  </div>
+                  <div class="absolute -bottom-7 -left-[10px] h-10 w-28 bg-slate-600 rounded-3xl rotate-45">
+                    <div class="absolute h-10 w-10 bg-transparent right-[20px] -bottom-10 -rotate-90 rounded-3xl" style="box-shadow: 31px 15px #475569;"></div>
+                  </div>
+                </div>
+        
+                <!-- MENU LIST -->
+                <div class="absolute z-50 w-max flex gap-5 pt-1 -rotate-90">
+                  @for (item of project_categories; track $index) {
+                    <div><img [src]="item.image_link" class="hover:opacity-50 cursor-pointer"></div>
+                  }
+                  
+                </div>
             </div>
     
     
